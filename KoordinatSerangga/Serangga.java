@@ -1,14 +1,12 @@
-public class Serangga {
-    private int jumlahKaki;
+public abstract class Serangga {
+    private int jumlahKaki = 6;
     private String warna;
 
     public Serangga(String warna) {
         this.warna = warna;
     }
     
-    public void gerak(int[] sumbu){
-         
-    }
+    public abstract void gerak(int[] sumbu);
 
     public int getJumlahKaki() {
         return jumlahKaki;
